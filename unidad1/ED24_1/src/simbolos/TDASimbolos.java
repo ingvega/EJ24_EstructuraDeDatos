@@ -10,16 +10,12 @@ package simbolos;
  * @author paveg
  */
 public interface TDASimbolos {
-    /** 
-     * cuando no haya espacio marca excepcion
-     * @param valor 
-     */
     public void agregar(char valor); 
     public void sobreponer(char valor, int pos) 
             throws IndexOutOfBoundsException;
-    public int encontrar(char valor); //(-1 cuando no exista y valor de 0 en adelante cuando lo encuentre)
-    public int eliminar(char valor); //asigna null en la posición que se encuentre el valor y devuelve la posición encontrada, de lo contrario devuelve -1
+    public int encontrar(char valor);
+    public int eliminar(char valor); 
     public int tamanio();
-    public String toString(); // Devolver la representación en cadena de la sección ocupada del arreglo
+    public String toString(); 
 
 }
