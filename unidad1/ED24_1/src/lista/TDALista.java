@@ -14,6 +14,7 @@ public abstract class TDALista {
     protected int posicion;
     
     public abstract boolean agregar(Object valor);
+    public abstract Object obtener(int posicion);
     public abstract int tamanio();
     /*
     agregar

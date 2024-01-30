@@ -14,6 +14,13 @@ public class Lista extends TDALista {
         valores=new Object[capacidad];
     }
     
+    /**
+     * Añade un valor a la lista
+     * @param valor Elemento a añadir
+     * @return <b>true</b> en caso de que la capacidad de la 
+     * colección haya permitido añadir la colección, <b>false</b> 
+     * en caso que la colección haya llegado a su capacidad
+     */
     @Override
     public boolean agregar(Object valor) {
         if(posicion<capacidad){
@@ -36,6 +43,15 @@ public class Lista extends TDALista {
             cadena+=valores[i] + "\n";
         }
         return cadena+"]";
+    }
+
+    @Override
+    public Object obtener(int posicion) {
+        if(posicion<this.posicion ){
+            return valores[posicion];
+        }else{
+            throw new IndexOutOfBoundsException(posicion);
+        }
     }
     
     
