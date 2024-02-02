@@ -38,7 +38,7 @@ public class Lista extends TDALista {
 
     @Override
     public String toString() {
-        String cadena="Lista[";
+        String cadena="Lista[\n";
         for (int i = 0; i < posicion; i++) {
             cadena+=valores[i] + "\n";
         }

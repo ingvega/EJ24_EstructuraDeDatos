@@ -40,7 +40,9 @@ public class UsoEstructuras {
         System.out.println("-------------------------");
         for (int i = 0; i < lista.tamanio(); i++) {
             //No se puede obtener directamente el nombre del tipo Object
-            //System.out.println(lista.obtener(i).getNombre());
+            System.out.println(lista.obtener(i).toString());
+            Persona persona=(Persona)lista.obtener(i);
+            System.out.println(persona.getNombre());
         }
         
     }
