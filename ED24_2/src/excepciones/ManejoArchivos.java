@@ -4,9 +4,14 @@
  */
 package excepciones;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -14,7 +19,8 @@ import java.util.Scanner;
  */
 public class ManejoArchivos {
 
-    static File archivo = new File("Ejemplo2.txt");
+    //static File archivo = new File("ED.txt");
+    static File archivo = new File("c://Ejemplo.tzt");
 
     static String leerLinea() throws FileNotFoundException {
         Scanner lector = new Scanner(archivo);
@@ -42,6 +48,17 @@ public class ManejoArchivos {
 //                lector.close();
 //            }catch(NullPointerException e){
 //            }
+        }
+    }
+    
+    static boolean agregarLinea(String texto){
+        try {
+            BufferedWriter  escritor = new BufferedWriter(new FileWriter(archivo,true));
+            escritor.append(texto);
+            escritor.close();
+            return true;
+        } catch (IOException ex) {
+            return false;
         }
     }
 }
