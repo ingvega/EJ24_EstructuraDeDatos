@@ -31,3 +31,10 @@ nb-configuration.xml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ED24_3/nbproject/private/
+build.xml
+manifest.mf
+build-impl.xml
+genfiles.properties
+project.properties
+project.xml
