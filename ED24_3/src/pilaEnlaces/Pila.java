@@ -51,8 +51,25 @@ public class Pila<R> extends TDAPila<R> {
     }
 
     private class Elemento{
-        R valor;
-        Elemento enlace;
+        private R valor;
+        private Elemento enlace;
+
+        public R getValor() {
+            return valor;
+        }
+
+        public void setValor(R valor) {
+            this.valor = valor;
+        }
+
+        public Elemento getEnlace() {
+            return enlace;
+        }
+
+        public void setEnlace(Elemento enlace) {
+            this.enlace = enlace;
+        }
+        
     }
     
 }
