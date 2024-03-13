@@ -11,7 +11,10 @@ import java.util.Scanner;
 public class UsoPilaOmegaUp {
 
     public static void main(String[] args) {
-        if (operacion(new Scanner(System.in).nextLine())) {
+        Scanner lector=new Scanner(System.in);
+        String expresion=lector.nextLine();
+        if(operacion(expresion)){
+        //if (operacion(new Scanner(System.in).nextLine())) {
             System.out.println("Si");
         } else {
             System.out.println("No");
