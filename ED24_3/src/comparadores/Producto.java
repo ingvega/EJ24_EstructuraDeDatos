@@ -20,7 +20,6 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
-
         
     public int getClave() {
         return clave;
@@ -94,7 +93,6 @@ public class Producto {
         if (obj==null) {
             return 1;
         }
-        
         Producto nuevoPro=(Producto)obj;
         
         if(this.nombre.compareTo(nuevoPro.nombre)==0){
